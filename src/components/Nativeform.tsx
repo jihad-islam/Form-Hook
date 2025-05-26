@@ -72,11 +72,13 @@ const Nativeform = () => {
             {...register("email")}
           />
 
-          <ErrorMessage
+          {errors.email && <p>{error.name.message}</p>}
+
+          {/* <ErrorMessage
             errors={errors}
             name={"email"}
             render={(m) => <p className="text-red-500">{m.message}</p>}
-          />
+          /> */}
         </div>
 
         {/* age  */}
