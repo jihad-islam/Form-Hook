@@ -62,11 +62,11 @@ const Nativeform = () => {
 
         {/* email  */}
         <div className="flex flex-col">
-          <label htmlFor="name">Email</label>
+          <label htmlFor="email">Email</label>
 
           <input
             type="text"
-            id="name"
+            id="email"
             className="p-2 border"
             placeholder="Your Email"
             {...register("email")}
